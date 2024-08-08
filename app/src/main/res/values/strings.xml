@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">SimbolosPatrios</string>
+    <string name="opcion_1">Compositor del Himno</string>
+    <string name="opcion_2">Grabador de la version oficial</string>
+    <string name="opcion_3">Autor del Himno</string>
+    <string name="opcion_4">Autor del Himno</string>
+
+
+    <string name="opciones_combined">
+        Desliza el nombre a la imagen de la persona correspondiente
+    </string>
+    <string name="respondistes">
+
+        Compositor del Himno - Santos Jorge\n
+        Graba el Himno Oficial - Jorge Ledezma\n
+        Autor del Himno - Jeronimo de la Ossa\n
+        Ordena el himno - William Buchanan\n
+
+
+
+    </string>
+
+    <string name="hola_aventurero_en_esta_emocionante_actividad_pondremos_a_prueba_tus_conocimientos_sobre_la_bandera_debes_elegir_la_mejor_respuesta_listo">¡Hola aventurero!, En esta emocionante actividad, pondremos a prueba tus conocimientos sobre la bandera de nuestro pais. Debes elegir la mejor respuesta, listo?</string>
+    <string name="descripcionintroescudo">¡Hola aventurero!, En esta emocionante actividad, pondremos a prueba tus conocimientos sobre el Escudo de armas de nuestro pais. Debes elegir la mejor respuesta, listo?</string>
+    <string name="descripcionintrohimno">¡Hola aventurero!, En esta emocionante actividad, pondremos a prueba tus conocimientos sobre el Himno Nacional de nuestro pais. Toca y mantén presionado el nombre, luego arrástralo hasta el retrato, listo?</string>
+</resources>

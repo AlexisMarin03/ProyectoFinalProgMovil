@@ -1,0 +1,133 @@
+<!-- activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Bandera"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="343dp"
+        android:layout_height="67dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Pregunta"
+        android:textColor="@color/texto"
+
+        android:textColorHighlight="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/optionsRadioGroup"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questionTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/optionARadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opción A"
+            android:textColor="@color/texto1"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/optionBRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/texto1"
+            android:text="Opción B"
+
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/optionCRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opción C"
+            android:textColor="@color/texto1"
+
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/optionDRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opción D"
+            android:textColor="@color/texto1"
+
+            android:textStyle="bold"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/optionsRadioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Responder" />
+
+
+    <TextView
+        android:id="@+id/Indicacion"
+        android:layout_width="310dp"
+        android:layout_height="66dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/submitButton"
+        android:layout_marginTop="15dp"
+
+
+        android:text="     Elige la respuesta correcta"
+        android:textColor="@color/texto"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="195dp"
+        android:layout_height="286dp"
+
+        android:layout_below="@id/submitButton"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/panama_26998_1920" />
+
+
+    <ImageView
+        android:id="@+id/ganchoImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/gancho"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/restartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ganchoImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Reiniciar"
+        android:visibility="gone"/>
+</RelativeLayout>
+
+

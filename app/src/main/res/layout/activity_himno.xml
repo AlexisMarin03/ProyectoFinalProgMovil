@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Figuras del Himno"
+        android:textSize="24sp"
+        android:layout_margin="16dp"
+        android:textColor="@color/texto"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"/>
+
+    <!-- Contenedor principal para las opciones e imágenes -->
+    <LinearLayout
+        android:id="@+id/opciones_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:padding="16dp">
+
+
+        <!-- Opciones e imágenes aquí -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/opcion1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Santos Jorge"
+                android:layout_margin="8dp"
+                android:textStyle="bold"
+                android:textColor="@color/texto1"
+                android:tag="opcion1"/>
+
+            <ImageView
+                android:id="@+id/himno1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="16dp"
+                android:contentDescription="himno1"
+                android:src="@drawable/himno1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+
+            <TextView
+                android:id="@+id/opcion2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="J. Ledezma"
+                android:textStyle="bold"
+                android:textColor="@color/texto1"
+                android:layout_margin="8dp"
+                android:layout_marginRight="40dp"
+                android:tag="opcion2"/>
+
+            <ImageView
+                android:id="@+id/himno2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="40dp"
+                android:contentDescription="himno2"
+
+                android:src="@drawable/himno2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/opcion3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jeronimo D. Ossa"
+                android:textStyle="bold"
+                android:textColor="@color/texto1"
+                android:layout_margin="8dp"
+                android:tag="opcion3"/>
+
+            <ImageView
+                android:id="@+id/himno3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/himno3"
+                android:layout_margin="16dp"
+                android:contentDescription="himno3"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/opcion4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="William Buchanan"
+                android:textStyle="bold"
+                android:textColor="@color/texto1"
+                android:layout_margin="8dp"
+                android:tag="opcion4"/>
+
+            <ImageView
+                android:id="@+id/himno4"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/himno4"
+                android:layout_margin="16dp"
+                android:contentDescription="himno4"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Botón de Reinicio -->
+    <Button
+        android:id="@+id/boton_reinicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reinicio"
+        android:onClick="reiniciarJuego"
+        android:layout_below="@id/opciones_container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Imagen Gancho -->
+    <ImageView
+        android:id="@+id/imagen_gancho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gancho"
+        android:visibility="gone"
+        android:layout_below="@id/opciones_container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"/>
+
+
+
+
+
+    <TextView
+        android:id="@+id/optionsTextView"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/boton_reinicio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/opciones_combined"
+        android:textColor="@color/texto"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+
+
+</RelativeLayout>
