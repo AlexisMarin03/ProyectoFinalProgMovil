@@ -1,2 +1,2 @@
 # ProyectoFinalProgMovil
-proyecto final de plata moviles
+proyecto final de plat moviles
